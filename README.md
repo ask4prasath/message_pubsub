@@ -10,12 +10,12 @@ $ gem install message-pubsub
 
 class Foo
   extend Message::Handler
-  subscribe :something, lambda { |message| receive_message(message) } #Subscibes to event something
+  subscribe :something, lambda { |message| puts message } #Subscibes to event something
 end
 
 class Bar
   extend Message::Handler
-  subscribe :something, lambda { |message| receive_message(message) } #Subscibes to same event something
+  subscribe :something, lambda { |message| p message } #Subscibes to same event something
 end
 
  Message::PubSub.publish(:something, "foo bar")
