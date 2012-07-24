@@ -6,6 +6,7 @@ A simple Ruby implementation of publish subscribe design pattern.
 $ gem install message-pubsub
 
 ## Simple Example
+```ruby
 
 class Foo
   extend Message::Handler
@@ -18,6 +19,7 @@ class Bar
 end
 
  Message::PubSub.publish(:something, "foo bar")
+```
 
 ## Contributing
 
