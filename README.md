@@ -7,7 +7,7 @@ $ gem install message-pubsub
 
 ## Simple Example
 ```ruby
-
+require 'message-pubsub'
 class Foo
   extend Message::Handler
   subscribe :something, lambda { |message| puts message } #Subscibes to event something
