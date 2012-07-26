@@ -18,7 +18,7 @@ module Message
       end
 
       def publish(event, message)
-        queue[event].each { |subscriber| subscriber.send(event, message) }
+        queue[event].each { |subscriber| subscriber.send(event, message) } && true
         rescue Exception => e
           raise Message::PubSubError.new({:error => e})
       end
