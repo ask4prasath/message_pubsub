@@ -31,6 +31,6 @@ end
 
 ## Sponsor
 
-[AppWorkLabs](http://www.appworklabs.com)
+[AppWorkLabs](http://www.appworklabs.com) - A premium uber clone application platform
 
 
