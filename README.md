@@ -29,6 +29,8 @@ end
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Sponsor
+
 [AppWorkLabs](http://www.appworklabs.com)
 
 
